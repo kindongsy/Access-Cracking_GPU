@@ -964,7 +964,7 @@ __device__ void _PBKDF2_HMAC_SHA512_core_test7(uint64_t* _prestate_1, uint64_t* 
 		"mov.b64		{ r1, dummy }, e; \n\t"
 		"mov.b64		{ dummy, r2 }, e; \n\t"
 
-		//∫Ø∞Ê : ø¨ªÍ »ƒ ∏ﬁ∏∏Æ ¡¢±Ÿ
+		//Î≥ÄÍ≤Ω : Ïó∞ÏÇ∞ ÌõÑ Î©îÎ™®Î¶¨ Ï†ëÍ∑º
 		"shf.r.wrap.b32		r3, r2, r1, 14;	\n\t"
 		"shf.r.wrap.b32		r4, r1, r2, 14;	\n\t"
 
@@ -1956,7 +1956,7 @@ __device__ void _PBKDF2_HMAC_SHA512_core_test7(uint64_t* _prestate_1, uint64_t* 
 		"add.u64			rd10, rd5, rd9;\n\t"
 		"add.u64			a, temp_e, rd10;\n\t"
 
-		//√‚∑¬
+		//Ï∂úÎ†•
 		"mov.u64			%0, a;			\n\t"
 		"mov.u64			%1, b;			\n\t"
 		"mov.u64			%2, c;			\n\t"
@@ -2011,7 +2011,7 @@ __device__ void _PBKDF2_HMAC_SHA512_core_test7(uint64_t* _prestate_1, uint64_t* 
 	w5_t = SHA512_EXPAND(w3_t, we_t, w6_t, w5_t); SHA512_STEP(SHA512_F0, SHA512_F1, d, e, f, g, h, a, b, c, w5_t, 0x4a7484aa6ea6e483);
 	w6_t = SHA512_EXPAND(w4_t, wf_t, w7_t, w6_t); SHA512_STEP(SHA512_F0, SHA512_F1, c, d, e, f, g, h, a, b, w6_t, 0x5cb0a9dcbd41fbd4);
 	w7_t = SHA512_EXPAND(w5_t, w0_t, w8_t, w7_t); SHA512_STEP(SHA512_F0, SHA512_F1, b, c, d, e, f, g, h, a, w7_t, 0x76f988da831153b5);
-	//º∫¥… ¿˙«œ πﬂª˝ - temp ∞Ì¡§ ∞™ ªÁøÎ Ω√ º∫¥… ¿˙«œ πﬂ∞ﬂ(«ÿ∞·)
+	//ÏÑ±Îä• Ï†ÄÌïò Î∞úÏÉù - temp Í≥†Ï†ï Í∞í ÏÇ¨Ïö© Ïãú ÏÑ±Îä• Ï†ÄÌïò Î∞úÍ≤¨(Ìï¥Í≤∞)
 	w8_t = SHA512_EXPAND(w6_t, w1_t, w9_t, w8_t); SHA512_STEP(SHA512_F0, SHA512_F1, a, b, c, d, e, f, g, h, w8_t, 0x983e5152ee66dfab);
 	w9_t = SHA512_EXPAND(w7_t, w2_t, wa_t, w9_t); SHA512_STEP(SHA512_F0, SHA512_F1, h, a, b, c, d, e, f, g, w9_t, 0xa831c66d2db43210);
 	wa_t = SHA512_EXPAND(w8_t, w3_t, wb_t, wa_t); SHA512_STEP(SHA512_F0, SHA512_F1, g, h, a, b, c, d, e, f, wa_t, 0xb00327c898fb213f);
@@ -2021,7 +2021,7 @@ __device__ void _PBKDF2_HMAC_SHA512_core_test7(uint64_t* _prestate_1, uint64_t* 
 	we_t = SHA512_EXPAND(wc_t, w7_t, wf_t, we_t); SHA512_STEP(SHA512_F0, SHA512_F1, c, d, e, f, g, h, a, b, we_t, 0x06ca6351e003826f);
 	wf_t = SHA512_EXPAND(wd_t, w8_t, w0_t, wf_t); SHA512_STEP(SHA512_F0, SHA512_F1, b, c, d, e, f, g, h, a, wf_t, 0x142929670a0e6e70);
 
-	//º∫¥… ¿˙«œ πﬂª˝ - 
+	//ÏÑ±Îä• Ï†ÄÌïò Î∞úÏÉù - 
 	w0_t = SHA512_EXPAND(we_t, w9_t, w1_t, w0_t); SHA512_STEP(SHA512_F0, SHA512_F1, a, b, c, d, e, f, g, h, w0_t, 0x27b70a8546d22ffc);
 	w1_t = SHA512_EXPAND(wf_t, wa_t, w2_t, w1_t); SHA512_STEP(SHA512_F0, SHA512_F1, h, a, b, c, d, e, f, g, w1_t, 0x2e1b21385c26c926);
 	w2_t = SHA512_EXPAND(w0_t, wb_t, w3_t, w2_t); SHA512_STEP(SHA512_F0, SHA512_F1, g, h, a, b, c, d, e, f, w2_t, 0x4d2c6dfc5ac42aed);
@@ -2225,7 +2225,7 @@ __device__ void _PBKDF2_HMAC_SHA512_core_test7(uint64_t* _prestate_1, uint64_t* 
 		"mov.b64		{ r1, dummy }, e; \n\t"
 		"mov.b64		{ dummy, r2 }, e; \n\t"
 
-		//∫Ø∞Ê : ø¨ªÍ »ƒ ∏ﬁ∏∏Æ ¡¢±Ÿ
+		//Î≥ÄÍ≤Ω : Ïó∞ÏÇ∞ ÌõÑ Î©îÎ™®Î¶¨ Ï†ëÍ∑º
 		"shf.r.wrap.b32		r3, r2, r1, 14;	\n\t"
 		"shf.r.wrap.b32		r4, r1, r2, 14;	\n\t"
 
@@ -3217,7 +3217,7 @@ __device__ void _PBKDF2_HMAC_SHA512_core_test7(uint64_t* _prestate_1, uint64_t* 
 		"add.u64			rd10, rd5, rd9;\n\t"
 		"add.u64			a, temp_e, rd10;\n\t"
 
-		//√‚∑¬
+		//Ï∂úÎ†•
 		"mov.u64			%0, a;			\n\t"
 		"mov.u64			%1, b;			\n\t"
 		"mov.u64			%2, c;			\n\t"
@@ -3856,7 +3856,7 @@ __device__ void _PBKDF2_HMAC_SHA512_core_test8(uint64_t* _prestate_1, uint64_t* 
 }
 
 //__shared__ uint64_t temp_test[8 * 128 + 63];		//for BC
-//__shared__ uint64_t temp_test[8 * 128];		//ø¯∫ª
+//__shared__ uint64_t temp_test[8 * 128];		//ÏõêÎ≥∏
 //__shared__ uint64_t _temp[8 * 128];
 
 __device__ void PBKDF2_HMAC_SHA512(uint8_t* pt, uint64_t ptLen, uint8_t* salt, uint64_t saLen, uint64_t* dk, uint64_t dkLen, uint32_t iter, uint32_t* temp_test, uint32_t* _temp) {
@@ -4000,9 +4000,6 @@ void PBKDF2_HMAC_SHA512_coalesed_test(uint64_t blocksize, uint64_t threadsize) {
 
 	cudaMemcpy(gpu_pt, temp, blocksize * threadsize * 8, cudaMemcpyHostToDevice);
 	cudaMemcpyToSymbol(constant_salt, test_sa, 4 * sizeof(uint8_t));
-	cudaEventCreate(&start);
-	cudaEventCreate(&stop);
-	cudaEventRecord(start, 0);
 
 	printf("[Time stamp]");
 	time_t timer = time(NULL);
@@ -4082,6 +4079,11 @@ void PBKDF2_HMAC_SHA512_coalesed_test(uint64_t blocksize, uint64_t threadsize) {
 	printf("\nIteration Count : %d\n\n", iteration_count);
 
 	startLoadingAnimation();
+
+	cudaEventCreate(&start);
+	cudaEventCreate(&stop);
+	cudaEventRecord(start, 0);
+
 	for (int i = 0; i < 5; i++) {
 		PBKDF2_HMAC_SHA512_fixed_Coalseced_memory << <blocksize, threadsize >> > (gpu_pt, gpu_dk, iteration_count);
 	}
