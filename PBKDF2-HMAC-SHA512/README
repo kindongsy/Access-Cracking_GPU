@@ -1,0 +1,1 @@
+Source code of PBKDF2-HMAC-SHA512 with optimizations suggested in the paper. An user interface has been added for user convenience.
